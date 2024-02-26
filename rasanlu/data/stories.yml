@@ -1,0 +1,101 @@
+version: "3.1"
+
+stories:
+  - story: greet_and_recommend_quote
+    steps:
+      - intent: greet
+      - action: utter_ask
+      - intent: recommend_quote
+      - action: action_recommend_quote
+
+  - story: greet_and_funny
+    steps:
+      - intent: greet
+      - action: utter_ask
+      - intent: funny
+      - action: utter_funny
+      - action: utter_helpful
+
+  - story: greet_and_inspiration
+    steps:
+      - intent: greet
+      - action: utter_ask
+      - intent: inspiration
+      - action: utter_inspiration
+      - action: utter_helpful
+
+  - story: greet_and_motivation
+    steps:
+      - intent: greet
+      - action: utter_ask
+      - intent: motivation
+      - action: utter_motivation
+      - action: utter_helpful
+
+  - story: greet_and_love
+    steps:
+      - intent: greet
+      - action: utter_ask
+      - intent: love
+      - action: utter_love
+      - action: utter_helpful
+
+  - story: user_asks_question
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask
+      - action: utter_ask
+
+
+  - story: greet_and_success
+    steps:
+      - intent: greet
+      - action: utter_ask
+      - intent: success
+      - action: utter_success
+      - action: utter_helpful
+
+  - story: user_feels_great
+    steps:
+      - intent: mood_great
+      - action: respond_to_great_mood
+
+  - story: user_feels_unhappy
+    steps:
+      - intent: mood_unhappy
+      - action: respond_to_unhappy_mood
+
+
+  - story: goodbye_and_thank_you
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+      - intent: thank_you
+      - action: utter_you_are_welcome
+
+  - story: handle_unknown_intent
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
+
+  - story: handle_affirm
+    steps:
+      - intent: affirm
+      - action: utter_affirm_response
+
+  - story: handle_deny
+    steps:
+      - intent: deny
+      - action: utter_deny_response
+
+  - story: handle_bot_challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_challenge_response
+  
+  - story: user_expresses_gratitude
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+

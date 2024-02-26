@@ -1,0 +1,73 @@
+version: "3.1"
+
+rules:
+  - rule: Greet the user 
+    steps:
+      - intent: greet
+      - action: utter_ask
+
+  - rule: Recommend a quote
+    steps:
+      - intent: recommend_quote
+      - action: action_recommend_quote
+  
+
+  - rule: Handle funny intent
+    steps:
+      - intent: funny
+      - action: utter_funny
+      - action: utter_helpful
+
+  - rule: Handle inspiration intent
+    steps:
+      - intent: inspiration
+      - action: utter_inspiration
+      - action: utter_helpful
+
+  - rule: Handle motivation intent
+    steps:
+      - intent: motivation
+      - action: utter_motivation
+      - action: utter_helpful
+
+  - rule: Handle love intent
+    steps:
+      - intent: love
+      - action: utter_love
+      - action: utter_helpful
+
+  - rule: Handle success intent
+    steps:
+      - intent: success
+      - action: utter_success
+      - action: utter_helpful
+
+  - rule: Say goodbye 
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+     
+  - rule: Handle thank you
+    steps:
+      - intent: thank_you
+      - action: utter_you_are_welcome
+      
+  - rule: Handle unknown intents
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
+
+  - rule: Handle affirm intent
+    steps:
+      - intent: affirm
+      - action: utter_affirm_response
+
+  - rule: Handle deny intent
+    steps:
+      - intent: deny
+      - action: utter_deny_response
+
+  - rule: Handle bot challenge intent
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_challenge_response

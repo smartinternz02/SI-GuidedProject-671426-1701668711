@@ -1,0 +1,133 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - recommend_quote
+  - ask
+  - affirm
+  - deny
+  - bot_challenge
+  - inspiration
+  - motivation
+  - success
+  - love
+  - funny
+  - thank_you
+  - mood_unhappy
+  - mood_great
+
+actions:
+  - action_recommend_quote
+  - utter_helpful
+  - utter_you_are_welcome
+  - utter_affirm_response
+  - utter_deny_response
+  - utter_bot_challenge_response
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+    
+  utter_affirm_response:
+    - text: "Great to hear that you agree!"
+
+  utter_deny_response:
+    - text: "Sure, I understand."
+    
+  utter_bot_challenge_response:
+    - text: "Yes, I am a bot! How can I assist you today?"
+ 
+  utter_you_are_welcome:
+    - text: "You're welcome!"
+
+  utter_helpful:
+    - text: "Here's some helpful information for you."
+
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_ask:
+    - text: "Hey there! Please tell me which type of quotes you're looking for today. You can choose from the following categories: Inspirational, Motivational, Success, Love, or Funny."
+  
+  utter_inspiration:
+    - text: "Here's an inspirational quote for you:\n'Believe you can, and you're halfway there.' - Theodore Roosevelt"
+    - text: "Here's an inspirational quote for you:\n'The only limit to our realization of tomorrow will be our doubts of today.' - Franklin D. Roosevelt"
+    - text: "Here's an inspirational quote for you:\n'Success is not final, failure is not fatal; It is the courage to continue that counts.' - Winston Churchill"
+    - text: "Here's an inspirational quote for you:\n'The future belongs to those who believe in the beauty of their dreams.' - Eleanor Roosevelt"
+    - text: "Here's an inspirational quote for you:\n'Don't watch the clock; do what it does. Keep going.' - Sam Levenson"
+    - text: "Here's an inspirational quote for you:\n'The only way to do great work is to love what you do.' - Steve Jobs"
+    - text: "Here's an inspirational quote for you:\n'In the middle of difficulty lies opportunity.' - Albert Einstein"
+    - text: "Here's an inspirational quote for you:\n'The only place where success comes before work is in the dictionary.' - Vidal Sassoon"
+    - text: "Here's an inspirational quote for you:\n'Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.' - Albert Schweitzer"
+    - text: "Here's an inspirational quote for you:\n'The harder you work for something, the greater you'll feel when you achieve it.'"
+
+  utter_motivation:
+    - text: "Here's a motivational quote for you:\n'Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.' - Steve Jobs"
+    - text: "Here's a motivational quote for you:\n'The only way to do great work is to love what you do.' - Steve Jobs"
+    - text: "Here's a motivational quote for you:\n'Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.' - Christian D. Larson"
+    - text: "Here's a motivational quote for you:\n'Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.' - Albert Schweitzer"
+    - text: "Here's a motivational quote for you:\n'The harder you work for something, the greater you'll feel when you achieve it.'"
+    - text: "Here's a motivational quote for you:\n'The only way to achieve the impossible is to believe it is possible.' - Charles Kingsleigh"
+    - text: "Here's a motivational quote for you:\n'Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.' - Roy T. Bennett"
+    - text: "Here's a motivational quote for you:\n'The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will.' - Vince Lombardi"
+    - text: "Here's a motivational quote for you:\n'Success is not final, failure is not fatal: It is the courage to continue that counts.' - Winston Churchill"
+    - text: "Here's a motivational quote for you:\n'Your time is limited, don't waste it living someone else's life.' - Steve Jobs"
+
+  utter_funny:
+    - text: "Here's a funny quote for you:\n'Always borrow money from a pessimist. He won’t expect it back.' - Oscar Wilde"
+    - text: "Here's a funny quote for you:\n'I'm writing a book. I've got the page numbers done.' - Steven Wright"
+    - text: "Here's a funny quote for you:\n'I asked the librarian if the library had any books on paranoia. She whispered, 'They're right behind you.' - Steven Wright"
+    - text: "Here's a funny quote for you:\n'Why don't scientists trust atoms? Because they make up everything.' - Unknown"
+    - text: "Here's a funny quote for you:\n'I told my wife she was drawing her eyebrows too high. She looked surprised.' - Unknown"
+    - text: "Here's a funny quote for you:\n'Behind every great man, there is a woman rolling her eyes.' - Jim Carrey"
+    - text: "Here's a funny quote for you:\n'If at first, you don't succeed, then skydiving definitely isn't for you.' - Steven Wright"
+    - text: "Here's a funny quote for you:\n'I'm on a whiskey diet. I've lost three days already.' - Tommy Cooper"
+    - text: "Here's a funny quote for you:\n'If you think you are too small to make a difference, try sleeping with a mosquito.' - Dalai Lama"
+    - text: "Here's a funny quote for you:\n'I used to be indecisive, but now I'm not so sure.' - Unknown"
+
+  utter_love:
+    - text: "Here's a love quote for you:\n'True love stories never have endings.' - Richard Bach"
+    - text: "Here's a love quote for you:\n'The best thing to hold onto in life is each other.' - Audrey Hepburn"
+    - text: "Here's a love quote for you:\n'Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.' - Unknown"
+    - text: "Here's a love quote for you:\n'You know you're in love when you can't fall asleep because reality is finally better than your dreams.' - Dr. Seuss"
+    - text: "Here's a love quote for you:\n'Love is when the other person's happiness is more important than your own.' - H. Jackson Brown Jr."
+    - text: "Here's a love quote for you:\n'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.' - Lao Tzu"
+    - text: "Here's a love quote for you:\n'In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.' - Maya Angelou"
+    - text: "Here's a love quote for you:\n'Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope.' - Maya Angelou"
+    - text: "Here's a love quote for you:\n'Love is an endless mystery, for it has nothing else to explain it.' - Rabindranath Tagore"
+    - text: "Here's a love quote for you:\n'To love and be loved is to feel the sun from both sides.' - David Viscott"
+
+  utter_success:
+    - text: "Here's a success quote for you:\n'Success is not final, failure is not fatal: It is the courage to continue that counts.' - Winston Churchill"
+    - text: "Here's a success quote for you:\n'The only place where success comes before work is in the dictionary.' - Vidal Sassoon"
+    - text: "Here's a success quote for you:\n'Success is not in what you have, but who you are.' - Bo Bennett"
+    - text: "Here's a success quote for you:\n'Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.' - Albert Schweitzer"
+    - text: "Here's a success quote for you:\n'Don't watch the clock; do what it does. Keep going.' - Sam Levenson"
+    - text: "Here's a success quote for you:\n'Success usually comes to those who are too busy to be looking for it.' - Henry David Thoreau"
+    - text: "Here's a success quote for you:\n'The road to success and the road to failure are almost exactly the same.' - Colin R. Davis"
+    - text: "Here's a success quote for you:\n'Success is not just about making money. It's about making a difference.' - Unknown"
+    - text: "Here's a success quote for you:\n'The only limit to our realization of tomorrow will be our doubts of today.' - Franklin D. Roosevelt"
+    - text: "Here's a success quote for you:\n'The only way to do great work is to love what you do.' - Steve Jobs"
+
+  utter_thank_you:
+    - text: "You're welcome!"
+    - text: "No problem!"
+    - text: "Glad I could help!"
+ 
+  utter_default:
+    - text: "I didn't quite catch that. Could you please specify the type of quote you're looking for?"
+    - text: "I'm not sure I understand. Could you provide more details about the type of quote you're interested in?"
+    - text: "Sorry, I didn't get that. Could you let me know the category of quotes you'd like?"
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+
+
+
+
